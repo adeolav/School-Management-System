@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+<!-- Block title -->
+{% block title %} Backend {% endblock %}
+
+<!-- Logout button -->
+{% block nav-btn %}
+<a href="{% url 'logout' %}" class="btn btn-outline-danger btn-sm text-light" id="btn-nav">Log out</a>
+{% endblock %}
+
+<!-- Block footer -->
+{% block footer %} style="color: #ff7f7f;" {% endblock %}
+
+<!-- Block navbar content -->
+{% block nav-content %}
+<i class="fa-solid fa-unlock-keyhole"></i>&nbsp;&nbsp; Admininstration
+{% endblock %}
+
+<!-- Page content -->
+{% block content %} 
+<h1 class="text-danger text-center" style="position: absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%);">Backend</h1>
+{% endblock content %}
