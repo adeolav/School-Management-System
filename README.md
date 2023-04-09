@@ -1,2 +1,2 @@
-# -School-Management-System
+# School-Management-System
 ERP project in Django
