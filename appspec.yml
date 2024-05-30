@@ -1,0 +1,5 @@
+version: 0.0
+os: linux
+files:
+  - source: /  # Source directory in the S3 bucket or CodeDeploy application revision
+    destination: /home/ubuntu/app  # Destination directory on the EC2 instance
