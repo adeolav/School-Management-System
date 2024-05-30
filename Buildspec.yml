@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - pip install -r requirements.txt
+  pre_build:
+    commands:
+      - echo Running migrations...
+      - python manage.py migrate
+      - echo Collecting static files...
+      - python manage.py collectstatic --noinput
+  build:
+    commands:
+      - echo Build started on `date`
+      # Add any build commands here
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      # Add any post-build commands here
+
+artifacts:
+  files:
+    - '**/*'
+  # Include any other settings as needed, such as excluding certain files or directories
+
